@@ -30,10 +30,19 @@ public class PhoneBookManager {
         //  2. Search contact
         //  3. Remove contact
         //  4. Exit
+        System.out.println("0. List contacts");
+        System.out.println("1. Add contact");
+        System.out.println("2. Search contact");
+        System.out.println("3. Remove contact");
+        System.out.println("4. Exit");
+
+
     }
 
     private void listContacts() {
         // TODO Szépen formázva írd ki a telefonkönyv összes bejegyzését!
+        System.out.println(phoneBook.toString());
+
     }
 
     private void addContact() {
@@ -55,5 +64,7 @@ public class PhoneBookManager {
         //  ha nem találod meg az adott kontaktot, jelezd
         //  azt is a felhasználónak!
     }
+
+
 
 }
