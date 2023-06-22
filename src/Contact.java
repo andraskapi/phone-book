@@ -1,9 +1,9 @@
 public class Contact {
     // TODO vegyél fel egy név és egy telefonszám fieldet, írj konstruktort és gettereket!
     private String name;
-    private int phoneNumber;
+    private String phoneNumber;
 
-    public Contact (String name, int phoneNumber){
+    public Contact (String name, String phoneNumber){
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
@@ -11,9 +11,13 @@ public class Contact {
         return name;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber ;
+    }
 }
